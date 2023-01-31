@@ -89,7 +89,7 @@ color: #222222;
   
   <!-- /adding Javascript-->
     <script>
-        var component = getElementsByClassName("tab");
+        function openTab(evt, tabName){
             var i, tabcontent, tablinks;
         tabcontent = document.getElementsByClassName("tabcontent");
         for (i = 0; i<tabcontent.length; i++){
@@ -101,6 +101,7 @@ color: #222222;
         }
         document.getElementsByClassName(tabName).style.display = "block";
         evt.currentTarget.className += " active";
+}
 
     </script>
 <br>
