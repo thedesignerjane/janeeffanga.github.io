@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+     <!-- Styling the Tab -->
+<head>
+ <style>
+    .tab {
+  overflow:hidden;
+  border: none;
+  background-color: #f4f4f6;
+}
+    .tab button {
+  background-color: #f5f5f5;
+color: #222222;
+  float: left;
+  text-align: left;
+  border: 1px solid #ccc;
+  outline: none;
+  cursor: pointer;
+  padding: 16px;
+  font-size: 16px;
+  transition: 0.5s;
+}
+    .tab button:hover {
+  background-color: #b74e0d;
+  color:#f4f4f6;
+}
+    .tab button.active {
+  background-color: #b74e0d;
+  color:#f4f4f6;
+}
+    .tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+  </style>
+    </head>
+
+   <!--Tab contents-->
+    <h2 style="font-family: helvetica;"> The Best Banana Bread Recipe</h2>
+
+    <p style="font-family: helvetica;"> This banana bread recipe creates the most delicious, moist loaf with loads of banana flavor.</p>
+
+    <img src="best-banana-bread.jpg.webp" alt="Banaba bread" width="900"><br/>
+</div>
+    <!-- Tab links -->
+<div class="tab">
+    <button class="tablinks" onclick="openTab(event, 'Ingredients')">Ingredients</button>
+    <button class="tablinks" onclick="openTab(event, 'Instructions')">Instructions</button>
+    <button class="tablinks" onclick="openTab(event, 'Nutritional Facts')">Nutritional Facts</button>
+</div>
+    <!-- Tab content -->
+<div id="Ingredients" class="tabcontent">
+    <h3>Ingredients</h3>
+    <ul>
+        <li>2 cups gluten free flour</li>
+        <li>4-5 very ripe bananas mashed</li>
+        <li>1/2 cup sugar</li>
+        <li>1/2 cup butter 1 stick, softened</li>
+        <li>2 eggs</li>
+        <li>2 tablespoons milk</li>
+         <li>1/2 teaspoon vanilla</li>
+         <li>1 teaspoon baking powder</li>
+          <li>1 teaspoon baking soda</li>
+          <li>1/4 teaspoon salt</li>
+          <li>1/2-1 cup chocolate chips</li>
+      </ul> 
+  </div>
+  
+  <div id="Instructions" class="tabcontent">
+    <h3>Instructions</h3>
+    <ol>
+        <li>Preheat oven to 350 degrees F (175 degrees C).</li>
+        <li>Lightly grease a 9x5 inch loaf pan, set aside.</li>
+        <li>In a large bowl, combine flour, baking soda, baking powder, and salt, set aside. </li>
+        <li>In a separate bowl, cream together butter and sugar. Stir in eggs, milk, vanilla, and mashed bananas until well blended.</li>
+        <li>Stir banana mixture and chocolate chips into flour mixture; stir just to moisten. Pour batter into prepared loaf pan.</li>
+        <li>Bake in preheated oven for 50 to 55 minutes, until a toothpick inserted into center of the loaf comes out clean. Let bread cool in pan for at least 15 minutes, then turn out onto a wire rack and cool another 30 minutes.</li>
+        <li>Slice and serve warm!</li>
+        </ol> 
+  </div>
+  
+  <div id="Nutritional Facts" class="tabcontent">
+    <h3>Nutritional Facts</h3>
+    <p>Serving: 1slice | Calories: 252kcal | Carbohydrates: 37g | Protein: 4g | Fat: 11g | Saturated Fat: 6g | Cholesterol: 49mg | Sodium: 225mg | Potassium: 188mg | Fiber: 3g | Sugar: 19g | Vitamin A: 318IU | Vitamin C: 3mg | Calcium: 48mg | Iron: 1mg</p>
+  </div>
+  
+  <!-- /adding Javascript-->
+    <script>
+        var component = getElementsByClassName("tab");
+            var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i<tabcontent.length; i++){
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i=0;i<tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementsByClassName(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+
+    </script>
+<br>
+<a href="https://thedesignerjane.github.io">Back to Homepage</a>
+</head>
+</html>
