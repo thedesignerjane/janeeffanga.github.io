@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8"/>
+    <title>JavaScript</title>
+
+    <!--Loads external CSS Stylesheet-->
+    <!--<link rel="stylesheet" href="style24.css">-->
+
+    <!-- This is a script file -->
+
+    <script>
+        var num = 10;
+        var name = "ARTG";
+
+        //Print command: displaying /printing the value of num
+        console.log(num);
+
+        //arithmetic operations
+        var addition = num + 10;
+
+        num = num + 10;
+        console.log(num);
+
+        //arithmetic operations with you return function of log
+        console.log(num+10);
+
+        //concatenation of strings of symbols
+        var name = "ARTG";
+
+        console.log(name+ "5330");
+
+        //Bolean value: Tru or Fals, Yes or No, 1 0r 0
+        //lets check if num is bigger than another value
+        var isBigger = num > 100;
+
+        console.log(isBigger);
+
+        //increment operator
+        var i = 1;
+        i--; // shortcut for increasing value by one
+
+        console.log(i);
+
+        //Array type - intializes an array called users, which has 4 items
+        var users = ["Northeastern", 10, "ARTG", 100];
+
+        console.log(users[0]);
+
+        var newObject = {
+            name: "Hastings Building",
+            color: "Orange",
+            street: "Huntington Avenue 700",
+            zip: 53719,
+            greetings: function(name) {
+                console.log("Hey" + name + "!")
+            }
+        };
+        console.log(newObject.greetings("Jane"));
+
+        //Different types of functions
+
+        //A function without an input variable
+        var printHello = function(){
+            console.log("Hello, world");
+        }
+
+        printHello();
+
+        // a function without a string input
+        //inside the parenthesis, pass a variable
+        var printName = function(name) {
+            console.log("Hello" + name);
+        }
+        
+        printName("Sir");
+        //function with a numerical return value
+        var addValues = function(val1, val2) {
+            let sum = val1 + val2;
+            //Return their sum
+            return sum;
+        }
+
+        var mySum = addValues(10, 10);
+
+        console.log(mySum);
+
+        var expValues = function(val) {
+            //Exponentiates given value using 2
+            let exp = val**2;
+            //Return their sum
+            return exp;
+        }
+        var myExp = expValues(10);
+
+        console.log(expValues(10))
+
+        //Conditional Statements are if/else statements
+        var condVal = 10;
+        if (condVal <= 5) {
+            console.log("This is not so bad.");
+        } else if (condVal == 15){
+            console.log("This is bad.");
+        } else {
+            console.log("I dont know what to do.");
+        }
+
+        //Combine functions with conditional statements
+        var greaterThanTen = function(val) {
+            if (val > 10) {
+                console.log("Yes!");
+            } else if (val == 10){
+                console.log("No");
+            } else {
+                val++;
+
+            }
+
+            console.log(val);
+            return val;
+        }
+        var checker = greaterThanTen(5);
+        console.log(checker);
+        //Classwork square of a variable
+        var squareRt = function(val) {
+            if(isNaN(val)){
+                return "This is not a number.";
+            
+            }else {
+                return Math.sqrt (val)
+            } 
+
+        }
+        console.log(squareRt(100));
+        console.log(squareRt("hi"));
+
+    </script>
+</head>
+
+<body>
+    <div>
+        <h1 id="hello">Hello, world!</h1>
+    </div>
+</body>
+</html>
