@@ -1,0 +1,10 @@
+div{
+    text-align: center;
+}
+
+.helveticaText {
+    font-family: "helvetica";
+    font-size:32px;
+    font-style: italic;
+    font-weight: 900;
+}

@@ -1,0 +1,10 @@
+div{
+    text-align: center;
+}
+
+.comicText {
+    font-family: "Helvetica";
+    font: size 32px;
+    font-style: italic;
+    font-weight: 900;
+}

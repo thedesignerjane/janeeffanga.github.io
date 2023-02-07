@@ -1,0 +1,258 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Homework 4: 01-31</title>
+
+    <!-- Loads external CSS file -->
+    <link rel="stylesheet" href="style32.css">
+
+    <!-- Loads external JS file -->
+    <script src="/homework/01-31/myFunction.js"></script>
+
+    <!-- Loads the D3.js library v7 -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    
+  </head>
+
+  <body>
+    <div>
+      <h2 id="Headline">Moving Circles Around</h2>
+    </div>
+
+
+   <!-- Uses the functions defined in myFunctions.js 
+             which is linked inside the head tag above. -->
+            
+            <script>
+              console.log("The sum is: " + sumAB(1, 2));
+              console.log("Here is a random number: " + randomPosition());
+            </script>
+
+
+    <!-- The following code within the script tag illustrates how D3
+        can be used for selections, changing styles and attributes, and multi-selections. -->
+
+    <script>
+            // Element selector that uses "id", analogous to document.getElementByID()
+            var page_title = d3.select("#Headline");
+            
+            // Changing individual element styles
+
+            page_title.style("color", "purple")
+            .style("font-size", "40px")
+            .style("background-color", "none")
+            .style("font-family", "helvetica")
+            .style("margin-top", "40px")
+            .style("margin-bottom", "40px")
+
+            page_title.attr("class", "helveticaText");
+
+            d3.selectAll("circle")
+                .style("fill", "blue")
+                .attr("cy", "40")
+                .attr("r", "40");
+            
+            // Adding user interaction on SVG elements using .selectAll()
+
+            d3.selectAll("circle")
+                .style("fill", "blue")
+                .attr("cy", "40")
+                .attr("r", "40")
+                .on("click", function(e, d) {
+                    d3.select(this).style("fill", "red");
+                });
+
+    </script>
+    
+     <!--  -->
+        <!-- PART C -->
+        <!--  -->
+
+        <!-- D3.js for animations: data arrays, enter/update/exit -->
+
+        <!-- The following creates an SVG container that will be populated with circles
+        using a separate function (see below). Again, the first line creates a rectangle 
+        in order to outline the container for better visibility. -->
+
+        <div>
+          <svg width="800" height="400" id="data-viz">
+              <!-- SVG viewport outline -->
+              <rect width="800" height="400" style="fill:white;stroke-width:4;stroke:purple"/>
+          </svg>
+      </div>
+
+      <div>
+          <button onclick="drawCircles(data1)">Fruit 1</button>
+          <button onclick="drawCircles(data2)">Fruit 2</button>
+          <button onclick="drawCircles(data3)">Fruit 3</button>
+          <button onclick="drawCircles(data4)">Fruit 4</button>
+          <button onclick="drawCircles(data5)">Fruit 5</button>
+          <button onclick="drawCircles(data6)">Fruit 6</button>
+      </div>
+
+      <script>
+
+          // Data Array: A JavaScript object written in a JSON-style format
+          // JavaScript Objects; https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects
+
+          // For the following animation with three circles, please also refer to this explanation:
+          // https://bost.ocks.org/mike/circles/ 
+      
+          // Data Array 1
+          var data1 = [
+              {
+                  fruit: "orange",
+                  value: 12412341
+              },
+              {
+                  fruit: "mango",
+                  value: 24123410
+              }
+          ];
+
+          // Data Array 2
+          var data2 = [
+              {
+                  fruit: "apple",
+                  value: 32412341
+              },
+              {
+              fruit: "peach",
+                    value: 65412341
+              },
+              {
+                    fruit: "grape",
+                    value: 54612341
+              },
+              {
+                  fruit: "mango",
+                  value: 24123410
+              }
+          ];
+
+          // Data Array 3
+          var data3 = [
+              {
+                  fruit: "mango",
+                  value: 24123410
+              },
+              {
+                  fruit: "apple",
+                  value: 32412341
+              },
+              {
+                  fruit: "orange",
+                  value: 12412341
+              }
+          ];
+          //Data Array 4
+          var data4 = [
+                {
+                    fruit: "banana",
+                    value: 15421234
+                },
+                {
+                    fruit: "peach",
+                    value: 65412341
+                }
+            ];
+            //Data Array 5
+            var data5 = [
+                {
+                    fruit: "grape",
+                    value: 54612341
+                },
+                {
+                    fruit: "peach",
+                    value: 65412341
+                }
+            ];
+            //Data Array 6
+            var data6 = [
+                {
+                    fruit: "peach",
+                    value: 65412341
+                },
+                {
+                    fruit: "grape",
+                    value: 54612341
+                },
+                {
+                    fruit: "banana",
+                    value: 15421234
+                }
+            ];
+                
+
+          function drawCircles(dataArray) {
+
+              // drawing circles
+
+              var circles = d3.select("#data-viz")
+                      .selectAll("circle")
+                      .data(dataArray, function(d) {
+                          return d.fruit;
+                      });
+
+              // Joining rectangles
+              // More information: https://observablehq.com/@d3/selection-join
+              //                   https://www.d3indepth.com/enterexit/
+             
+                // Entering rectangles
+              circles.join(
+                  function(enter) {
+                      return enter.append("circle")
+                          .attr("fill", function(d) {
+                              if (d.fruit == "orange") {
+                                  return "orange";
+                          }
+                              else if (d.fruit == "mango") {
+                                  return "green";
+                              }
+                              else if (d.fruit == "apple") {
+                                  return "red";
+                              }
+                              else if (d.fruit == "peach") {
+                                  return "pink";
+                              } else if (d.fruit == "grape") {
+                                  return "purple";
+                              } else if (d.fruit == "banana") {
+                                  return "yellow";
+                              }
+                          })
+                          .attr("id", function(d) {
+                              d.fruit;
+                          })
+                          .attr("cx", 300)
+                          .attr("cy", randomPosition)
+                          .attr("r", 0)
+                          .transition().duration(500)
+                          .attr("r", 40)
+                         
+                  },
+                  // Updating Circles
+                  function(update) {
+                      return update.transition().duration(800)
+                          .attr("cx", randomPosition)
+                          .attr("r", 60);
+                          
+                  },
+                  // Exiting Rectangles
+                  function(exit) {
+                      return exit.transition().duration(1000)
+                          .attr("r", 0)
+                          .remove();
+                  }
+              )
+
+          }
+
+      </script>
+      <br>
+      <br>
+      <a href="https://thedesignerjane.github.io" style="font-family: helvetica;">Back to Homepage</a>
+  </body>
+
+</html>
