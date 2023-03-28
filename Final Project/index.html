@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Riding the Rails - Visualizing MBTA Subway Ridership Patterns</title>
+	<link rel="stylesheet" type="text/css" href="/Final Project/style.css">
+	<script type="text/javascript" src="/Final Project/script.js"></script>
+</head>
+<body>
+	<header>
+        <div class="banner-image" style="background-image: url('Final Project/MBTA Banner.jpg');"></div>
+			<div class="banner-text">
+				<h1>Riding the Rails</h1>
+				<h4>Visualizing MBTA Subway Ridership Patterns (2019 - 2022)</h4>
+			</div>
+		</div>
+	</header>
+	<main>
+		<section class="intro">
+			<h4>Introduction</h4>
+			<p>The Boston MBTA subway system is one of the busiest public transportation systems in the United States, serving millions of passengers each year. This project aims to provide an interactive and insightful look at the ridership patterns of Boston's subway system from 2019 to 2022.</p>
+		</section>
+		<section class="overview">
+			<h4>Project Overview</h4>
+			<p>The goal of this project is to help you gain a better understanding of the ridership patterns of Boston's subway system. Through an interactive choropleth map of Boston neighborhoods, you can explore the ridership rating of each neighborhood, along with additional information such as the total ridership, number of stations, and available lines. The map also allows you to toggle between the different years to see how ridership patterns have changed over time.<br>
+                In addition to the neighborhood-level ridership data, this visualization also provides insights into the busiest stations and the most popular subway lines in Boston. Clicking on each station will reveal more information about the ridership patterns of that station, including which subway lines run through it and how its ridership compares to other stations.</p>
+		</section>
+		<section class="dataset">
+			<h4>Dataset</h4>
+			<p>The dataset used in this project is the Subway and Light Rail Transit Ridership from January 1st, 2019 to December 31st, 2022, obtained from the Massachusetts Department of Transportation (massDOT) Mobility Dashboard. The data provides daily ridership data for the MBTA subway and light rail system, broken down by station and subway line.</p>
+		</section>
+		<section class="visualization">
+			<h4>Ridership Across Neighborhoods</h4>
+			<p>As you explore the interactive map, you'll see that Boston is divided into 16 neighborhoods, each with its own unique characteristics and ridership patterns. The color gradient on the map reflects the ridership rating of each neighborhood, with darker shades indicating higher ridership.<br>
+                Clicking on each neighborhood reveals a tooltip with additional information such as the total ridership for each neighborhood, no of stations, and available lines. You can also toggle between the years 2019 to 2022 to see how the ridership patterns have changed over time.</p> <br>
+			<svg id="map"></svg>
+		</section>
+	</main>
+</body>
+</html>
