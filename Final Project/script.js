@@ -1,22 +1,37 @@
 // Load the CSV file containing the MBTA ridership data
-d3.csv("ridership_data.csv", function(error, data) {
-    if (error) throw error;
+d3.csv("Ridership_Rapid_Transit_Master.csv").then(function(data) {
+      console.log(data);
+    });
   
     // Process the ridership data here
   
     // Call the function to create the ridership visualization
-    createRidershipVisualization();
-  });
   
   // Load the GeoJSON file for the interactive map
-  d3.json("neighborhoods_map.geojson", function(error, data) {
-    if (error) throw error;
+  d3.json("boston_neighborhoods.geojson").then(function(data) {
+    // Process the data as needed
+    console.log(data);
+  }).catch(function(error) {
+    console.log(error);
+  });
+
+  d3.json("neighborhoods.geojson").then(function(data) {
+    createMap(data);
+  });
+
+  // Load the GeoJSON file for the interactive map
+  d3.json("boston_neighborhoods.geojson").then(function(data) {
+    // Process the data as needed
+    console.log(data);
+  }).catch(function(error) {
+    console.log(error);
+  });
+
   
     // Process the GeoJSON data here
   
     // Call the function to create the interactive map
     createInteractiveMap();
-  });
   
   function createRidershipVisualization() {
     // Code to create the ridership visualization here
