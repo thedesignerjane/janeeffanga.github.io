@@ -1,4 +1,4 @@
-d3.csv("datasets/ridership.csv").then(function(data){
+d3.csv("./datasets/ridership.csv").then(function(data){
 
   // This accesses the first row of the csv dataset
   console.log(data[0]);

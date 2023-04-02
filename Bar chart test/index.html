@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Creating a Bar Chart</title>
+
+        <link rel="stylesheet" type="text/css" href="/Bar chart test/style.css">
+
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <script src="https://d3js.org/d3-collection.v1.min.js"></script>
+    </head>
+    <body>
+        <h1>MBTA Ridership by Lines</h1>
+
+        <div>
+          <p>Select a year:</p>
+          <select name="year" id="year">
+            <option value="0">2019</option>
+            <option value="1">2020</option>
+            <option value="2">2021</option>
+            <option value="3">2022</option>
+          </select>
+        </div>
+
+        <div id="chart"></div>
+
+        <script src="/Bar chart test/script.js"></script>
+    </body>
+</html>

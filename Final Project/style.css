@@ -70,3 +70,8 @@ section.visualization svg {
 	max-width: 100%;
 	height: auto;
 }
+
+#barchart {
+	width: 100%;
+	height: 80vh;
+}

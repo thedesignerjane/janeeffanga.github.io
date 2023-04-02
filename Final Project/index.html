@@ -4,6 +4,7 @@
 	<title>Riding the Rails - Visualizing MBTA Subway Ridership Patterns</title>
 
 	<script src="https://d3js.org/d3.v7.min.js"></script>
+	<script src="https://d3js.org/d3-collection.v1.min.js"></script>
 	<script src="https://unpkg.com/topojson-client@3"></script>
 
 	<link rel="stylesheet" type="text/css" href="/Final Project/style.css">
@@ -20,24 +21,41 @@
 	</header>
 	<main>
 		<section class="intro">
-			<h4>Introduction</h4>
-			<p>The Boston MBTA subway system is one of the busiest public transportation systems in the United States, serving millions of passengers each year. This project aims to provide an interactive and insightful look at the ridership patterns of Boston's subway system from 2019 to 2022.</p>
-		</section>
-		<section class="overview">
-			<h4>Project Overview</h4>
-			<p>The goal of this project is to help you gain a better understanding of the ridership patterns of Boston's subway system. Through an interactive choropleth map of Boston neighborhoods, you can explore the ridership rating of each neighborhood, along with additional information such as the total ridership, number of stations, and available lines. The map also allows you to toggle between the different years to see how ridership patterns have changed over time.<br>
-                In addition to the neighborhood-level ridership data, this visualization also provides insights into the busiest stations and the most popular subway lines in Boston. Clicking on each station will reveal more information about the ridership patterns of that station, including which subway lines run through it and how its ridership compares to other stations.</p>
+			<h3>Introduction</h3>
+			<p>Welcome to Riding the Rails, a visualization project that explores the ridership patterns of the MBTA system. The MBTA, or Massachusetts Bay Transportation Authority, is the public transit system that serves the Greater Boston area.<br>
+				<br>
+				This project is the final submission for ARTG 5330 - Visualization Technology course, an elective course that I took to learn the basics of web-based interactive visualization with a focus on building familiarity with HTML, CSS, JavaScript, and the d3js library, as well as best practices and common patterns in data visualization problem solving.<br>
+				<br>
+				I chose the MBTA dataset for my project because it is something I could easily relate to, as it is my major means of transportation as an international student who just moved to Boston. I noticed that some lines and stations were more crowded than others, which sparked my curiosity about the patterns of ridership and how they vary across different parts of the city.</p>
 		</section>
 		<section class="dataset">
-			<h4>Dataset</h4>
-			<p>The dataset used in this project is the Subway and Light Rail Transit Ridership from January 1st, 2019 to December 31st, 2022, obtained from the Massachusetts Department of Transportation (massDOT) Mobility Dashboard. The data provides daily ridership data for the MBTA subway and light rail system, broken down by station and subway line.</p>
+			<h3>Dataset & Design Decisions</h3>
+			<p>For this project, I used the Subway and Light Rail Transit Ridership dataset from the Massachusetts Department of Transportation (massDOT) Mobility Dashboard. This dataset contains daily ridership data for the MBTA subway and light rail system, broken down by station and subway line, from January 1st, 2019 to December 31st, 2022.<br>
+				<br>
+				Before starting the visualization process, I conducted exploratory data analysis to identify any errors or inconsistencies in the data. I also had to clean up the dataset and combine the information into one file, as the data was initially provided for individual stations.<br>
+				<br>
+				Once the data was cleaned and consolidated, I began to plan the design and visual encodings that I would use to best communicate the insights gleaned from the data. I wanted to make sure that the visualizations were clear, easy to read, and engaging for the viewer. To achieve this, I decided to use a combination of bar charts, line charts, and maps to represent the ridership data and highlight patterns and trends.<br>
+				<br>
+				In addition, I incorporated interactive features into the visualizations, which allowed the viewer to explore the data further and gain deeper insights into the ridership patterns of the MBTA subway system. By using a narrative approach to the visualization, I aimed to tell a compelling story that would draw the viewer in and help them understand the significance of the data.</p>
 		</section>
-		<section class="visualization">
-			<h4>Ridership Across Neighborhoods</h4>
-			<p>As you explore the interactive map, you'll see that Boston is divided into 16 neighborhoods, each with its own unique characteristics and ridership patterns. The color gradient on the map reflects the ridership rating of each neighborhood, with darker shades indicating higher ridership.<br>
-                Clicking on each neighborhood reveals a tooltip with additional information such as the total ridership for each neighborhood, no of stations, and available lines. You can also toggle between the years 2019 to 2022 to see how the ridership patterns have changed over time.</p> <br>
-			<svg id="chart"></svg>
-		</section>
+
+		<h1>MBTA Ridership by Lines</h1>
+
+        <div>
+          <p>Select a year:</p>
+          <select name="year" id="year">
+            <option value="0">2019</option>
+            <option value="1">2020</option>
+            <option value="2">2021</option>
+            <option value="3">2022</option>
+          </select>
+        </div>
+
+        <div id="barchart"></div>
+
 	</main>
+
+
+	<script src="/Final Project/barchart_script.js"></script>
 </body>
 </html>
