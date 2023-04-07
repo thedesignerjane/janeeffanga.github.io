@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+
+<head>
+    <script src="https://kit.fontawesome.com/418bff0045.js" crossorigin="anonymous"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js'></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://d3js.org/d3-collection.v1.min.js"></script>
+
+
+    <!--- basic page needs
+   ================================================== -->
+    <meta charset="utf-8">
+    <title>Visualizing MBTA Subway Ridership</title>
+    <meta name="title" property="og:title" content="Visualizing MBTA Subway Ridership">
+    <meta name="image" property="og:image" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+   ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS
+   ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/data.css">
+
+
+    <!-- favicons
+	================================================== -->
+    <link rel="icon" type="image/png" href="images/mbta fav icon.png">
+
+</head>
+
+<body id="top">
+
+
+    <!--  section
+================================================== -->
+    <section id="hero">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+            <div class="row">
+
+                <div class="col-twelve">
+
+                    <h5></h5>
+                    <h1><span style="color:#FFffff">Riding the Rails</span></h1>
+
+                    <p class="hero-position">
+                        <span>A Data Visualization Project</span>
+                    </p>
+
+                    <a class="button stroke smoothscroll" href="#about" title="">Explore the project</a>
+
+                </div>
+
+            </div>
+        </div> <!-- /hero-content -->
+
+    </section> <!-- end of section hero -->
+
+    <!-- about section
+   ================================================== -->
+    <section id="about">
+
+        <div class="row section-intro">
+            <div class="col-twelve">
+
+                <h5>About the project</h5>
+                <h1>Visualizing the MBTA subway & lightrail ridership patterns</h1>
+
+                <div class="intro-info">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row about-content">
+            <p>“Riding the Rails” is a data visualization project that explores the ridership patterns of the
+                Massachusetts Bay Transportation Authority (MBTA), the public transit system that serves the Greater
+                Boston area.<br>
+                <br>
+                This project is the final submission for ARTG 5330 - Visualization Technology course, an elective course
+                I completed as part of my Experience Design graduate program at Northeastern University to learn the
+                basics of web-based interactive visualization.<br>
+                <br>
+                I chose the MBTA dataset for my project because it is something I could easily relate to, as it is my
+                major means of transportation as an international student who just moved to Boston. I noticed that some
+                lines and stations were more crowded than others, which sparked my curiosity about the patterns of
+                ridership and how they vary across different parts of the city.
+            </p>
+
+        </div>
+        <!--Dataset info-->
+        <div class="row section-intro" style="height: 64px" ;>
+            <div class="col-twelve">
+
+                <h2>
+                    <img src="/Clean Final/images/titleicon.png" alt="icon" height="48" width="48"
+                        style="vertical-align: bottom; margin-right: 10px;">
+                    <span>Dataset</span>
+                </h2>
+
+
+                <div class="intro-info">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row about-content">
+            <p>“For this project, I used the Subway and Light Rail Transit Ridership dataset from the Massachusetts
+                Department of Transportation <a href="https://mobility-massdot.hub.arcgis.com">(MassDOT)</a> Mobility
+                Dashboard. This dataset contains daily ridership data for the MBTA subway and light rail system, broken
+                down by station and subway line, from January 1st, 2019 to December 31st, 2022.
+            </p>
+        </div>
+
+        <!--Visualization Strategy info-->
+        <div class="row section-intro" style="height: 64px" ;>
+            <div class="col-twelve">
+
+                <h2>
+                    <img src="/Clean Final/images/titleicon.png" alt="icon" height="48" width="48"
+                        style="vertical-align: bottom; margin-right: 10px;">
+                    <span>Visualization Strategy</span>
+                </h2>
+
+                <div class="intro-info">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row about-content">
+            <p>The visualization strategy for this project is to create an interactive and exploratory tool that enables
+                viewers to gain insights into the ridership patterns of the Massachusetts Bay Transportation Authority
+                (MBTA) across different lines, stations, and neighborhoods. The project will leverage a combination of
+                three different chart types: <span style="color: #ED8B00;">bar chart</span>, <span
+                    style="color: #ED8B00;">bubble chart</span>, and <span style="color: #ED8B00;">choropleth
+                    map</span>, to effectively communicate the key questions to be answered.<br>
+                <br>
+                Through the bar chart, viewers can compare the ridership across different subway lines and understand
+                how it has changed over the years from 2019 to 2022. The bubble chart will provide a clear visualization
+                of which MBTA stations are the busiest, and how they compare to other stations. The choropleth map, on
+                the other hand, will illustrate how ridership varies across different neighborhoods of Boston.<br>
+                <br>
+                The visualization tool is designed to offer viewers an interactive and immersive experience, enabling
+                them to explore the data and find additional information such as the total ridership, number of
+                stations, and available lines. By adopting this visualization strategy, the project aims to deliver a
+                comprehensive and engaging understanding of the MBTA ridership patterns to its viewers.
+            </p>
+        </div>
+
+    </section> <!-- /end of section about -->
+
+    <!-- Visualization section-->
+    <section id="visualization">
+
+        <div class="row section-intro">
+            <div class="col-twelve">
+
+                <h5>Visualization One</h5>
+                <h1>Ridership across subway lines</h1>
+
+                <div class="chart-intro-info">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row about-content">
+            <p>This bar chart shows how ridership is distributed across different subway lines. Each bar segment represents
+                the total ridership for that line for the selected year. By toggling between the different years using the
+                interactive tab, we can easily compare how ridership has changed over time and identify any trends.
+            </p>
+        </div>
+
+    <div class="row bar-chart-section">
+
+        <div class="year-selector">
+            <span class="select-year">Select a year</span>
+            <select name="year" id="year-select">
+                <option value="0">2019</option>
+                <option value="1">2020</option>
+                <option value="2">2021</option>
+                <option value="3">2022</option>
+            </select>
+        </div>
+        <div id="barchart"></div>
+
+    </div>
+
+        <div class="row section-intro">
+            <div class="col-twelve">
+
+                <h5>Visualization Two</h5>
+                <h1>Ridership across subway stations</h1>
+
+                <div class="chart-intro-info">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row about-content">
+            <p>Using a bubble chart, we will explore the busiest stations in the system. Each bubble on the chart corresponds to a station, and the size of the bubble indicates the ridership at that station. Hovering over a station will reveal a tooltip with additional information such as the total ridership and available subway lines at that station. We can also toggle between different years to see how ridership patterns have changed over time
+            </p>
+        </div>
+
+    <div class="row bubble-chart-section">
+
+        <div class="year-selector">
+            <span class="select-year">Select a year</span>
+            <select name="year" id="year-select">
+                <option value="0">2019</option>
+                <option value="1">2020</option>
+                <option value="2">2021</option>
+                <option value="3">2022</option>
+            </select>
+        </div>
+        <div id="barchart"></div>
+
+    </div>
+
+        <div class="row section-intro">
+            <div class="col-twelve">
+
+                <h5>Visualization Three</h5>
+                <h1>Ridership Across Neighborhoods</h1>
+
+                <div class="chart-intro-info">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row about-content">
+            <p>This choropleth math visualizes ridership distribution across neighborhoods. The color gradient on the map reflects the ridership rating of each neighborhood, with darker shades indicating higher ridership. Clicking on each neighborhood reveals a tooltip with additional information such as the total ridership for each neighborhood, ranking, no of stations, and available lines. You can also toggle between the years 2019 to 2022 to see how the ridership patterns have changed over time.
+            </p>
+        </div>
+
+    <div class="row choropleth-map-section">
+
+        <div class="year-selector">
+            <span class="select-year">Select a year</span>
+            <select name="year" id="year-select">
+                <option value="0">2019</option>
+                <option value="1">2020</option>
+                <option value="2">2021</option>
+                <option value="3">2022</option>
+            </select>
+        </div>
+        <div id="barchart"></div>
+
+    </div>
+    </section><!-- /end of section visualization -->
+
+    <section id="funfacts">
+
+        <div class="row section-intro">
+            <div class="col-twelve">
+
+                <h5>Fun Fact</h5>
+                <h1>Origin of MBTA Colors</h1>
+
+                <div class="intro-info">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row about-content">
+            <p><span style="color:#ffffff; background-color: #008633; border-radius: 32px; padding: 6px 16px 6px 16px;">Green Line</span></p>
+            <p>This color was chosen because the Green Line travels along the trees and suburban lawns of Brookline and Newton. The subway runs from the Lechmere area, heading west to Boston College and Chestnut Hill.</p>
+            <p><span style="color:#ffffff; background-color: #ED8B00; border-radius: 32px; padding: 6px 16px 6px 16px;">Orange Line</span></p>
+            <p>Orange was chosen because this line previously ran along Washington Street, once known as the Orange Way. This subway runs from the Malden/Medford area, heading southwest to Forest Hills.</p>
+            <p><span style="color:#ffffff; background-color: #EE0000; border-radius: 32px; padding: 6px 16px 6px 16px;">Red Line</span></p>
+            <p>The red line color choice was based on the Harvard Crimson, because this subway leaves from Cambridge, heading south- east to Braintree and Quincy.</p>
+            <p><span style="color:#ffffff; background-color: #003DA5; border-radius: 32px; padding: 6px 16px 6px 16px;">Blue Line</span></p>
+            <p>Because this line runs along the coast, it was named for the blue of the Atlantic. This subway extends from the Government Center area, transporting to and from the airport.</p><br>
+            <br>
+        </div>
+
+    </section> <!-- /end of section funfact -->
+
+    <footer>
+        <div class="row">
+          <div class="col-md-6">
+            <p><span style="color: #ffffff;">&copy; 2023 Jane Effanga. All Rights Reserved.</span></p>
+          </div>
+        </div>
+      </footer>
+</body>
+
+<script src="script/barchart_script.js"></script>
+
+</html>

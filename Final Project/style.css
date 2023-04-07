@@ -32,6 +32,16 @@ body {
 	margin: 0 auto;
   }
 
+  #bubblechart-svg {
+	display: block;
+	margin: 0 auto;
+  }
+
+  #choromap-svg {
+	display: block;
+	margin: 0 auto;
+  }
+
 /* Main content styles */
 main {
 	max-width: 1080px;
