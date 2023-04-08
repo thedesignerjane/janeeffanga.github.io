@@ -95,19 +95,19 @@ function draw (year) {
 
 //6. DRAW BARS
 
-var tooltip = d3.select("#barchart")
-.append("div")
-.style("opacity", 0)
-.attr("class", "tooltip")
-.style("background-color", "white")
-.style("border", "solid")
-.style("border-width", "1px")
-.style("border-radius", "5px")
-.style("padding", "10px")
+  const tooltip = d3.select("#barchart")
+  .append("div")
+  .style("opacity", 0)
+  .attr("class", "tooltip")
+  .style("background-color", "white")
+  .style("border", "solid")
+  .style("border-width", "1px")
+  .style("border-radius", "5px")
+  .style("padding", "10px")
 
-  const color = d3.scaleOrdinal()
-    .domain(['Red Line', 'Green Line', 'Blue Line', 'Orange Line', 'Silver Line'])
-    .range(['#e41a1c', '#4daf4a', '#377eb8', '#ff7f00', 'gray']);
+    const color = d3.scaleOrdinal()
+      .domain(['Red Line', 'Green Line', 'Blue Line', 'Orange Line', 'Silver Line'])
+      .range(['#ee0000', '#008633', '#003DA5', '#ED8B00', '#7C878E']);
 
     var bars = svg.selectAll('.bar')
         .data(yearlyData[year].values)

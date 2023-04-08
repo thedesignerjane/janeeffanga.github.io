@@ -5,6 +5,7 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js'></script>
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <script src="https://d3js.org/d3-collection.v1.min.js"></script>
+    <script src="/Clean Final/script/page_script.js"></script>
 
 
     <!--- basic page needs
@@ -55,7 +56,7 @@
                         <span>A Data Visualization Project</span>
                     </p>
 
-                    <a class="button stroke smoothscroll" href="#about" title="">Explore the project</a>
+                    <a class="button stroke smoothscroll" href="#about" title="" onclick="smoothScroll(event)">Explore the project</a>
 
                 </div>
 
@@ -73,6 +74,11 @@
 
                 <h5>About the project</h5>
                 <h1>Visualizing the MBTA subway & lightrail ridership patterns</h1>
+                <br>
+                <p style="color: #565d61; font-size: 16px;">
+                    <span>SPRING 2023 | ARTG 5330 | PROFESSOR ALEX HARIDIS<br>
+                        NORTHEASTERN UNIVERSITY</span>
+                </p>
 
                 <div class="intro-info">
                 </div>
@@ -159,110 +165,125 @@
 
     </section> <!-- /end of section about -->
 
-    <!-- Visualization section-->
+<!-- Visualization section-->
     <section id="visualization">
 
-        <div class="row section-intro">
-            <div class="col-twelve">
+            <div class="row section-intro">
+                <div class="col-twelve">
 
-                <h5>Visualization One</h5>
-                <h1>Ridership across subway lines</h1>
+                    <h5>Visualization One</h5>
+                    <h1>Ridership across subway lines</h1>
 
-                <div class="chart-intro-info">
+                    <div class="chart-intro-info">
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row about-content">
+                <p>This bar chart shows how ridership is distributed across different subway lines. Each bar segment represents
+                    the total ridership for that line for the selected year. By toggling between the different years using the
+                    interactive tab, we can easily compare how ridership has changed over time and identify any trends.
+                </p>
+            </div>
+
+        <div class="row bar-chart-section">
+
+            <div class="year-selector">
+                <span class="select-year">Select a year</span>
+                <select name="year" id="year-select">
+                    <option value="0">2019</option>
+                    <option value="1">2020</option>
+                    <option value="2">2021</option>
+                    <option value="3">2022</option>
+                </select>
+            </div>
+            <div id="barchart"></div>
+
+        </div>
+
+            <div class="row section-intro">
+                <div class="col-twelve">
+
+                    <h5>Visualization Two</h5>
+                    <h1>Ridership across subway stations</h1>
+
+                    <div class="chart-intro-info">
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row about-content">
+                <p>Using a bubble chart, we will explore the busiest stations in the system. Each bubble on the chart corresponds to a station, and the size of the bubble indicates the ridership at that station. Hovering over a station will reveal a tooltip with additional information such as the total ridership and available subway lines at that station. We can also toggle between different years to see how ridership patterns have changed over time
+                </p>
+            </div>
+
+        <div class="row bubble-chart-section">
+
+                <div class="year-selector">
+                    <span class="select-year">Select a year</span>
+                    <select name="year" id="year-select">
+                        <option value="0">2019</option>
+                        <option value="1">2020</option>
+                        <option value="2">2021</option>
+                        <option value="3">2022</option>
+                    </select>
+                </div>
+
+                <div id="map-container">
+                    <svg id="viz">
+                        <!-- The rectangle for the background color -->
+                        <rect id="ocean" x="0" y="0" fill="#f5f5f5" />
+                        
+                        <g id="map"></g>
+                    </svg>
+                </div>
+
+        </div>
+    
+            <div class="row section-intro">
+                <div class="col-twelve">
+
+                    <h5>Visualization Three</h5>
+                    <h1>Ridership Across Neighborhoods</h1>
+
+                    <div class="chart-intro-info">
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row about-content">
+                <p>This choropleth math visualizes ridership distribution across neighborhoods. The color gradient on the map reflects the ridership rating of each neighborhood, with darker shades indicating higher ridership. Clicking on each neighborhood reveals a tooltip with additional information such as the total ridership for each neighborhood, ranking, no of stations, and available lines. You can also toggle between the years 2019 to 2022 to see how the ridership patterns have changed over time.
+                </p>
+            </div>
+
+        <div class="row bubble-chart-section">
+
+                <div class="year-selector">
+                    <span class="select-year">Select a year</span>
+                    <select name="year" id="year-select">
+                        <option value="0">2019</option>
+                        <option value="1">2020</option>
+                        <option value="2">2021</option>
+                        <option value="3">2022</option>
+                    </select>
+                </div>
+
+                <div id="map-container">
+                    <svg id="viz">
+                        <!-- The rectangle for the background color -->
+                        <rect id="ocean" x="0" y="0" fill="#f5f5f5" />
+                        
+                        <g id="map"></g>
+                    </svg>
                 </div>
 
             </div>
-        </div>
-
-        <div class="row about-content">
-            <p>This bar chart shows how ridership is distributed across different subway lines. Each bar segment represents
-                the total ridership for that line for the selected year. By toggling between the different years using the
-                interactive tab, we can easily compare how ridership has changed over time and identify any trends.
-            </p>
-        </div>
-
-    <div class="row bar-chart-section">
-
-        <div class="year-selector">
-            <span class="select-year">Select a year</span>
-            <select name="year" id="year-select">
-                <option value="0">2019</option>
-                <option value="1">2020</option>
-                <option value="2">2021</option>
-                <option value="3">2022</option>
-            </select>
-        </div>
-        <div id="barchart"></div>
-
-    </div>
-
-        <div class="row section-intro">
-            <div class="col-twelve">
-
-                <h5>Visualization Two</h5>
-                <h1>Ridership across subway stations</h1>
-
-                <div class="chart-intro-info">
-                </div>
-
-            </div>
-        </div>
-
-        <div class="row about-content">
-            <p>Using a bubble chart, we will explore the busiest stations in the system. Each bubble on the chart corresponds to a station, and the size of the bubble indicates the ridership at that station. Hovering over a station will reveal a tooltip with additional information such as the total ridership and available subway lines at that station. We can also toggle between different years to see how ridership patterns have changed over time
-            </p>
-        </div>
-
-    <div class="row bubble-chart-section">
-
-        <div class="year-selector">
-            <span class="select-year">Select a year</span>
-            <select name="year" id="year-select">
-                <option value="0">2019</option>
-                <option value="1">2020</option>
-                <option value="2">2021</option>
-                <option value="3">2022</option>
-            </select>
-        </div>
-        <div id="barchart"></div>
-
-    </div>
-
-        <div class="row section-intro">
-            <div class="col-twelve">
-
-                <h5>Visualization Three</h5>
-                <h1>Ridership Across Neighborhoods</h1>
-
-                <div class="chart-intro-info">
-                </div>
-
-            </div>
-        </div>
-
-        <div class="row about-content">
-            <p>This choropleth math visualizes ridership distribution across neighborhoods. The color gradient on the map reflects the ridership rating of each neighborhood, with darker shades indicating higher ridership. Clicking on each neighborhood reveals a tooltip with additional information such as the total ridership for each neighborhood, ranking, no of stations, and available lines. You can also toggle between the years 2019 to 2022 to see how the ridership patterns have changed over time.
-            </p>
-        </div>
-
-    <div class="row choropleth-map-section">
-
-        <div class="year-selector">
-            <span class="select-year">Select a year</span>
-            <select name="year" id="year-select">
-                <option value="0">2019</option>
-                <option value="1">2020</option>
-                <option value="2">2021</option>
-                <option value="3">2022</option>
-            </select>
-        </div>
-        <div id="barchart"></div>
-
-    </div>
     </section><!-- /end of section visualization -->
 
     <section id="funfacts">
-
         <div class="row section-intro">
             <div class="col-twelve">
 
@@ -286,18 +307,19 @@
             <p>Because this line runs along the coast, it was named for the blue of the Atlantic. This subway extends from the Government Center area, transporting to and from the airport.</p><br>
             <br>
         </div>
-
     </section> <!-- /end of section funfact -->
 
-    <footer>
+    <footer style="background-color: #131517;">
         <div class="row">
           <div class="col-md-6">
             <p><span style="color: #ffffff;">&copy; 2023 Jane Effanga. All Rights Reserved.</span></p>
           </div>
         </div>
-      </footer>
-</body>
+    </footer>
 
-<script src="script/barchart_script.js"></script>
+    <script src="script/barchart_script.js"></script>
+    <script src="script/bubblechart_script.js"></script>
+    <script src="script/map.js"></script>
+</body>
 
 </html>

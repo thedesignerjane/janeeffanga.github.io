@@ -36,7 +36,7 @@
      height: 100%;
  }
  body {
-     background: #151515;
+     background: #ffffff;
      font-family: "lora-regular", serif;
      font-size: 1.8rem;
      line-height: 3rem;
@@ -1494,7 +1494,8 @@
   */
  #about {
      background: #FFFFFF;
-     padding-top: 12rem;
+     padding-top: 8rem;
+     padding-bottom: 0.1rem;
      width:100%;
  }
  #about .section-intro {
@@ -1504,12 +1505,13 @@
  #visualization {
     background: #FFFFFF;
     padding-top: 8rem;
+    padding-bottom: 0.1rem;
     width:100%;
 }
  
 #funfacts {
     background: #FFFFFF;
-    padding-top: 8rem;
+    padding-top: 2rem;
     width:100%;
 }
 
