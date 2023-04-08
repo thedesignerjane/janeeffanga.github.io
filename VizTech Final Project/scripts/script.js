@@ -34,16 +34,6 @@ d3.select("#ocean")
 
 d3.json("data/Boston_Neighborhoods.geojson").then(function(Boston) {
 
-  //everything that follows uses world to refer to the data set "world-alpha3.json"
-
-    /** 
-     * 5.
-     * This function converts the loaded TopoJSON object to GeoJSON
-     * It creates an array of JavaScript objects where each object stores:
-     * (a) Geometry (e.g., polygons) defined by a list of coordinates.
-     * (b) ID, which in this case is the ISO code of a country
-     * (c) Properties, in this case `name` and `iso`. e.g., name: "Argentina", iso: "ARG"
-    */
 
     let geoJSON = topojson.feature(world, world.objects.countries);
 
