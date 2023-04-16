@@ -127,17 +127,17 @@ var stationFile = './datasets/station_location.csv';
 
   };
 //}
-document.getElementById("year-select").addEventListener("change", function() {
-  // Get the selected year value
-  var selectedYear = this.value;
-});
+// document.getElementById("year-select").addEventListener("change", function() {
+//   // Get the selected year value
+//   var selectedYear = this.value;
+// });
 
-function updateBubbleChart(year) {
-  // Filter the newData array based on the selected year
-  var filteredData = newData.filter(function(d) {
-    return d.year === year;
-  });
-}
+// function updateBubbleChart(year) {
+//   // Filter the newData array based on the selected year
+//   var filteredData = newData.filter(function(d) {
+//     return d.year === year;
+//   });
+// }
 
 // mapping station coordinates to their corresponding location on the map
 

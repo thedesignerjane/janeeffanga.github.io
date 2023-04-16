@@ -160,7 +160,11 @@ var bostonNeighborhoods = [
     }).filter((d) => bostonNeighborhoods.includes(d.neighborhood));
     
     return newData
+
+  console.log(newData);
 };
+
+ 
 
 let geoJSONFile = "https://gist.githubusercontent.com/jdev42092/5c285c4a3608eb9f9864f5da27db4e49/raw/a1c33b1432ca2948f14f656cc14c7c7335f78d95/boston_neighborhoods.json";
 
