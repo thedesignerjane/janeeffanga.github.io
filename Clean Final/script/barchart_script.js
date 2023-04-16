@@ -95,16 +95,6 @@ function draw (year) {
 
 //6. DRAW BARS
 
-  const tooltip = d3.select("#barchart")
-  .append("div")
-  .style("opacity", 0)
-  .attr("class", "tooltip")
-  .style("background-color", "white")
-  .style("border", "solid")
-  .style("border-width", "1px")
-  .style("border-radius", "5px")
-  .style("padding", "10px")
-
     const color = d3.scaleOrdinal()
       .domain(['Red Line', 'Green Line', 'Blue Line', 'Orange Line', 'Silver Line'])
       .range(['#ee0000', '#008633', '#003DA5', '#ED8B00', '#7C878E']);
@@ -116,7 +106,21 @@ function draw (year) {
         .exit()
         .remove();
 
+    //tooltip
+    const tooltip = d3.select("#barchart")
+    .append("div")
+    .style("opacity", 0.9)
+    .attr("class", "tooltip")
+    .style("position", "absolute")
+    .style("background-color", "white")
+    .style("border", "solid")
+    .style("border-width", "1px")
+    .style("border-radius", "5px")
+    .style("border-color", "#000000")
+    .style("padding", "10px")
 
+    //const formatValue = d3.format(","); // Create format function with commas
+    
     const points = bars
     .enter()
     .append("rect")
@@ -128,11 +132,11 @@ function draw (year) {
     .attr("fill", function(d) { return color(d.key); })
     .on("mouseover", function(event,d) {
       tooltip.transition()
-        .duration(200)
-        .style("opacity", .9);
-        tooltip.html(d.y)
+        .duration(1000)
+        .style("opacity", 0.9);
+      tooltip.html(`<strong>Total ridership:</strong><br> ${d3.format(",")(d.value)}`) 
         .style("left", (event.pageX) + "px")
-        .style("top", (event.pageY - 28) + "px");
+        .style("top", (event.pageY - 35) + "px");
       })
     .on("mouseout", function(d) {
       tooltip.transition()
@@ -158,6 +162,10 @@ function draw (year) {
     svg.select('.y.axis')
       .transition(t)
       .call(yAxis);
+
+
+  // Using d variable in a callback, such as d3.format()
+    let displayValue = d3.format(",")(d => d.value);
 
   
 //7. DRAW AXIS LABELS
@@ -187,4 +195,6 @@ var select = d3.select('#year-select');
 select.on('change', function() {
   console.log(this.value)
     draw(this.value);
+
+  
 });

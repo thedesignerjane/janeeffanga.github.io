@@ -51,7 +51,7 @@ Red Line,1/1/19,Ashmont,2346
 Red Line,1/1/19,Braintree,979
 Red Line,1/1/19,Broadway,1492
 Red Line,1/1/19,Central,4237
-Red Line,1/1/19,Charles MGH,1938
+Red Line,1/1/19,Charles/MGH,1938
 Red Line,1/1/19,Davis,2566
 Red Line,1/1/19,Downtown Crossing,3368
 Red Line,1/1/19,Fields Corner,1694
@@ -121,7 +121,7 @@ Red Line,1/2/19,Ashmont,7066
 Red Line,1/2/19,Braintree,4266
 Red Line,1/2/19,Broadway,5459
 Red Line,1/2/19,Central,13189
-Red Line,1/2/19,Charles MGH,9489
+Red Line,1/2/19,Charles/MGH,9489
 Red Line,1/2/19,Davis,9601
 Red Line,1/2/19,Downtown Crossing,10046
 Red Line,1/2/19,Fields Corner,3859
@@ -191,7 +191,7 @@ Red Line,1/3/19,Ashmont,8470
 Red Line,1/3/19,Braintree,4397
 Red Line,1/3/19,Broadway,6106
 Red Line,1/3/19,Central,14295
-Red Line,1/3/19,Charles MGH,10161
+Red Line,1/3/19,Charles/MGH,10161
 Red Line,1/3/19,Davis,10544
 Red Line,1/3/19,Downtown Crossing,11176
 Red Line,1/3/19,Fields Corner,4613
@@ -261,7 +261,7 @@ Red Line,1/4/19,Ashmont,8667
 Red Line,1/4/19,Braintree,4420
 Red Line,1/4/19,Broadway,5897
 Red Line,1/4/19,Central,14550
-Red Line,1/4/19,Charles MGH,9784
+Red Line,1/4/19,Charles/MGH,9784
 Red Line,1/4/19,Davis,10298
 Red Line,1/4/19,Downtown Crossing,11461
 Red Line,1/4/19,Fields Corner,4892
@@ -331,7 +331,7 @@ Red Line,1/5/19,Ashmont,3471
 Red Line,1/5/19,Braintree,1433
 Red Line,1/5/19,Broadway,2128
 Red Line,1/5/19,Central,6877
-Red Line,1/5/19,Charles MGH,2916
+Red Line,1/5/19,Charles/MGH,2916
 Red Line,1/5/19,Davis,4559
 Red Line,1/5/19,Downtown Crossing,4475
 Red Line,1/5/19,Fields Corner,2426
@@ -401,7 +401,7 @@ Red Line,1/6/19,Ashmont,2831
 Red Line,1/6/19,Braintree,1120
 Red Line,1/6/19,Broadway,1873
 Red Line,1/6/19,Central,6464
-Red Line,1/6/19,Charles MGH,2427
+Red Line,1/6/19,Charles/MGH,2427
 Red Line,1/6/19,Davis,3641
 Red Line,1/6/19,Downtown Crossing,3867
 Red Line,1/6/19,Fields Corner,1940
@@ -471,7 +471,7 @@ Red Line,1/7/19,Ashmont,8671
 Red Line,1/7/19,Braintree,4258
 Red Line,1/7/19,Broadway,6031
 Red Line,1/7/19,Central,14544
-Red Line,1/7/19,Charles MGH,10236
+Red Line,1/7/19,Charles/MGH,10236
 Red Line,1/7/19,Davis,10923
 Red Line,1/7/19,Downtown Crossing,11618
 Red Line,1/7/19,Fields Corner,4882
@@ -541,7 +541,7 @@ Red Line,1/8/19,Ashmont,8824
 Red Line,1/8/19,Braintree,4303
 Red Line,1/8/19,Broadway,6249
 Red Line,1/8/19,Central,15402
-Red Line,1/8/19,Charles MGH,10517
+Red Line,1/8/19,Charles/MGH,10517
 Red Line,1/8/19,Davis,10767
 Red Line,1/8/19,Downtown Crossing,10978
 Red Line,1/8/19,Fields Corner,4878
@@ -6706,7 +6706,7 @@ Red Line,2/14/19,Ashmont,9168
 Red Line,2/14/19,Braintree,4438
 Red Line,2/14/19,Broadway,6411
 Red Line,2/14/19,Central,17029
-Red Line,2/14/19,Charles MGH,10995
+Red Line,2/14/19,Charles/MGH,10995
 Red Line,2/14/19,Davis,12467
 Red Line,2/14/19,Downtown Crossing,12458
 Red Line,2/14/19,Fields Corner,5217
@@ -6776,7 +6776,7 @@ Red Line,2/15/19,Ashmont,8665
 Red Line,2/15/19,Braintree,4062
 Red Line,2/15/19,Broadway,5719
 Red Line,2/15/19,Central,15683
-Red Line,2/15/19,Charles MGH,10135
+Red Line,2/15/19,Charles/MGH,10135
 Red Line,2/15/19,Davis,12152
 Red Line,2/15/19,Downtown Crossing,11717
 Red Line,2/15/19,Fields Corner,5050
@@ -6846,7 +6846,7 @@ Red Line,2/16/19,Ashmont,3995
 Red Line,2/16/19,Braintree,1696
 Red Line,2/16/19,Broadway,2615
 Red Line,2/16/19,Central,8997
-Red Line,2/16/19,Charles MGH,3881
+Red Line,2/16/19,Charles/MGH,3881
 Red Line,2/16/19,Davis,3
 Red Line,2/16/19,Downtown Crossing,5973
 Red Line,2/16/19,Fields Corner,2450
@@ -6916,7 +6916,7 @@ Red Line,2/17/19,Ashmont,2792
 Red Line,2/17/19,Braintree,1347
 Red Line,2/17/19,Broadway,2012
 Red Line,2/17/19,Central,7136
-Red Line,2/17/19,Charles MGH,3128
+Red Line,2/17/19,Charles/MGH,3128
 Red Line,2/17/19,Davis,3
 Red Line,2/17/19,Downtown Crossing,4704
 Red Line,2/17/19,Fields Corner,1899
@@ -6986,7 +6986,7 @@ Red Line,2/18/19,Ashmont,3769
 Red Line,2/18/19,Braintree,1540
 Red Line,2/18/19,Broadway,2422
 Red Line,2/18/19,Central,8743
-Red Line,2/18/19,Charles MGH,3756
+Red Line,2/18/19,Charles/MGH,3756
 Red Line,2/18/19,Davis,5295
 Red Line,2/18/19,Downtown Crossing,5448
 Red Line,2/18/19,Fields Corner,2200
@@ -7056,7 +7056,7 @@ Red Line,2/19/19,Ashmont,8196
 Red Line,2/19/19,Braintree,4227
 Red Line,2/19/19,Broadway,5929
 Red Line,2/19/19,Central,15638
-Red Line,2/19/19,Charles MGH,10591
+Red Line,2/19/19,Charles/MGH,10591
 Blue Line,1/10/19,Airport,6534
 Blue Line,1/11/19,Airport,6335
 Blue Line,1/12/19,Airport,4214
@@ -100966,173 +100966,173 @@ Red Line,2/28/23,Central,6731
 Red Line,3/1/23,Central,8936
 Red Line,3/2/23,Central,8757
 Red Line,3/3/23,Central,8164
-Red Line,1/9/19,Charles MGH,10723
-Red Line,1/10/19,Charles MGH,10703
-Red Line,1/11/19,Charles MGH,9755
-Red Line,1/12/19,Charles MGH,2955
-Red Line,1/13/19,Charles MGH,2288
-Red Line,1/14/19,Charles MGH,10250
-Red Line,1/15/19,Charles MGH,10603
-Red Line,1/16/19,Charles MGH,10755
-Red Line,1/17/19,Charles MGH,10751
-Red Line,1/18/19,Charles MGH,9956
-Red Line,1/19/19,Charles MGH,3782
-Red Line,1/20/19,Charles MGH,1951
-Red Line,1/21/19,Charles MGH,2704
-Red Line,1/22/19,Charles MGH,10117
-Red Line,1/23/19,Charles MGH,10889
-Red Line,1/24/19,Charles MGH,10245
-Red Line,1/25/19,Charles MGH,10031
-Red Line,1/26/19,Charles MGH,3470
-Red Line,1/27/19,Charles MGH,2614
-Red Line,1/28/19,Charles MGH,10395
-Red Line,1/29/19,Charles MGH,10647
-Red Line,1/30/19,Charles MGH,10667
-Red Line,1/31/19,Charles MGH,9811
-Red Line,2/1/19,Charles MGH,9753
-Red Line,2/2/19,Charles MGH,3223
-Red Line,2/3/19,Charles MGH,2487
-Red Line,2/4/19,Charles MGH,9986
-Red Line,2/5/19,Charles MGH,12725
-Red Line,2/6/19,Charles MGH,10750
-Red Line,2/7/19,Charles MGH,10754
-Red Line,2/8/19,Charles MGH,10516
-Red Line,2/9/19,Charles MGH,3274
-Red Line,2/10/19,Charles MGH,2564
-Red Line,2/11/19,Charles MGH,10337
-Red Line,2/12/19,Charles MGH,10496
-Red Line,2/13/19,Charles MGH,10831
-Red Line,2/20/19,Charles MGH,10411
-Red Line,2/21/19,Charles MGH,10300
-Red Line,2/22/19,Charles MGH,9987
-Red Line,2/23/19,Charles MGH,3297
-Red Line,2/24/19,Charles MGH,2087
-Red Line,2/25/19,Charles MGH,8298
-Red Line,2/26/19,Charles MGH,10819
-Red Line,2/27/19,Charles MGH,10830
-Red Line,2/28/19,Charles MGH,10457
-Red Line,3/1/19,Charles MGH,10269
-Red Line,3/2/19,Charles MGH,3046
-Red Line,3/3/19,Charles MGH,2782
-Red Line,3/4/19,Charles MGH,8432
-Red Line,3/5/19,Charles MGH,11010
-Red Line,3/6/19,Charles MGH,10849
-Red Line,3/7/19,Charles MGH,10841
-Red Line,3/8/19,Charles MGH,10296
-Red Line,3/9/19,Charles MGH,3490
-Red Line,3/10/19,Charles MGH,2143
-Red Line,3/11/19,Charles MGH,10312
-Red Line,3/12/19,Charles MGH,10640
-Red Line,3/13/19,Charles MGH,10785
-Red Line,3/14/19,Charles MGH,10843
-Red Line,3/15/19,Charles MGH,10206
-Red Line,3/16/19,Charles MGH,3708
-Red Line,3/17/19,Charles MGH,3091
-Red Line,3/18/19,Charles MGH,9889
-Red Line,3/19/19,Charles MGH,10728
-Red Line,3/20/19,Charles MGH,10803
-Red Line,3/21/19,Charles MGH,10659
-Red Line,3/22/19,Charles MGH,9830
-Red Line,3/23/19,Charles MGH,3329
-Red Line,3/24/19,Charles MGH,2812
-Red Line,3/25/19,Charles MGH,10033
-Red Line,3/26/19,Charles MGH,10664
-Red Line,3/27/19,Charles MGH,10899
-Red Line,3/28/19,Charles MGH,10698
-Red Line,3/29/19,Charles MGH,10364
-Red Line,3/30/19,Charles MGH,4086
-Red Line,3/31/19,Charles MGH,2442
-Red Line,4/1/19,Charles MGH,10129
-Red Line,4/2/19,Charles MGH,10593
-Red Line,4/3/19,Charles MGH,10788
-Red Line,4/4/19,Charles MGH,10889
-Red Line,4/5/19,Charles MGH,9862
-Red Line,4/6/19,Charles MGH,3896
-Red Line,4/7/19,Charles MGH,2953
-Red Line,4/8/19,Charles MGH,10161
-Red Line,4/9/19,Charles MGH,10783
-Red Line,4/10/19,Charles MGH,11187
-Red Line,4/11/19,Charles MGH,10856
-Red Line,4/12/19,Charles MGH,10105
-Red Line,4/13/19,Charles MGH,4781
-Red Line,4/14/19,Charles MGH,3785
-Red Line,4/15/19,Charles MGH,9105
-Red Line,4/16/19,Charles MGH,11016
-Red Line,4/17/19,Charles MGH,11066
-Red Line,4/18/19,Charles MGH,10596
-Red Line,4/19/19,Charles MGH,10113
-Red Line,4/20/19,Charles MGH,3053
-Red Line,4/21/19,Charles MGH,2708
-Red Line,4/22/19,Charles MGH,9844
-Red Line,4/23/19,Charles MGH,10893
-Red Line,4/24/19,Charles MGH,11053
-Red Line,4/25/19,Charles MGH,11144
-Red Line,4/26/19,Charles MGH,9896
-Red Line,4/27/19,Charles MGH,3924
-Red Line,4/28/19,Charles MGH,2736
-Red Line,4/29/19,Charles MGH,10229
-Red Line,4/30/19,Charles MGH,10665
-Red Line,5/1/19,Charles MGH,10590
-Red Line,5/2/19,Charles MGH,10778
-Red Line,5/3/19,Charles MGH,10337
-Red Line,5/4/19,Charles MGH,3752
-Red Line,5/5/19,Charles MGH,2869
-Red Line,5/6/19,Charles MGH,10384
-Red Line,5/7/19,Charles MGH,10702
-Red Line,5/8/19,Charles MGH,11149
-Red Line,5/9/19,Charles MGH,11264
-Red Line,5/10/19,Charles MGH,10157
-Red Line,5/11/19,Charles MGH,4550
-Red Line,5/12/19,Charles MGH,2574
-Red Line,5/13/19,Charles MGH,10247
-Red Line,5/14/19,Charles MGH,10936
-Red Line,5/15/19,Charles MGH,11062
-Red Line,5/16/19,Charles MGH,11315
-Red Line,5/17/19,Charles MGH,10090
-Red Line,5/18/19,Charles MGH,4858
-Red Line,5/19/19,Charles MGH,3353
-Red Line,5/20/19,Charles MGH,10537
-Red Line,5/21/19,Charles MGH,11236
-Red Line,5/22/19,Charles MGH,11279
-Red Line,5/23/19,Charles MGH,10881
-Red Line,5/24/19,Charles MGH,10135
-Red Line,5/25/19,Charles MGH,4099
-Red Line,5/26/19,Charles MGH,3871
-Red Line,5/27/19,Charles MGH,3631
-Red Line,5/28/19,Charles MGH,10864
-Red Line,5/29/19,Charles MGH,11421
-Red Line,5/30/19,Charles MGH,11449
-Red Line,5/31/19,Charles MGH,10702
-Red Line,6/1/19,Charles MGH,4059
-Red Line,6/2/19,Charles MGH,3859
-Red Line,6/3/19,Charles MGH,10706
-Red Line,6/4/19,Charles MGH,11242
-Red Line,6/5/19,Charles MGH,11419
-Red Line,6/6/19,Charles MGH,11807
-Red Line,6/7/19,Charles MGH,11157
-Red Line,6/8/19,Charles MGH,5967
-Red Line,6/9/19,Charles MGH,3740
-Red Line,6/10/19,Charles MGH,10886
-Red Line,6/11/19,Charles MGH,10099
-Red Line,6/12/19,Charles MGH,11056
-Red Line,6/13/19,Charles MGH,10300
-Red Line,6/14/19,Charles MGH,9370
-Red Line,6/15/19,Charles MGH,3815
-Red Line,6/16/19,Charles MGH,2297
-Red Line,6/17/19,Charles MGH,10365
-Red Line,6/18/19,Charles MGH,10636
-Red Line,6/19/19,Charles MGH,11165
-Red Line,6/20/19,Charles MGH,10823
-Red Line,6/21/19,Charles MGH,10002
-Red Line,6/22/19,Charles MGH,3914
-Red Line,6/23/19,Charles MGH,3674
-Red Line,6/24/19,Charles MGH,10475
-Red Line,6/25/19,Charles MGH,10619
-Red Line,6/26/19,Charles MGH,11219
-Red Line,6/27/19,Charles MGH,10912
-Red Line,6/28/19,Charles MGH,10371
-Red Line,6/29/19,Charles MGH,3298
-Red Line,6/30/19,Charles MGH,2621
+Red Line,1/9/19,Charles/MGH,10723
+Red Line,1/10/19,Charles/MGH,10703
+Red Line,1/11/19,Charles/MGH,9755
+Red Line,1/12/19,Charles/MGH,2955
+Red Line,1/13/19,Charles/MGH,2288
+Red Line,1/14/19,Charles/MGH,10250
+Red Line,1/15/19,Charles/MGH,10603
+Red Line,1/16/19,Charles/MGH,10755
+Red Line,1/17/19,Charles/MGH,10751
+Red Line,1/18/19,Charles/MGH,9956
+Red Line,1/19/19,Charles/MGH,3782
+Red Line,1/20/19,Charles/MGH,1951
+Red Line,1/21/19,Charles/MGH,2704
+Red Line,1/22/19,Charles/MGH,10117
+Red Line,1/23/19,Charles/MGH,10889
+Red Line,1/24/19,Charles/MGH,10245
+Red Line,1/25/19,Charles/MGH,10031
+Red Line,1/26/19,Charles/MGH,3470
+Red Line,1/27/19,Charles/MGH,2614
+Red Line,1/28/19,Charles/MGH,10395
+Red Line,1/29/19,Charles/MGH,10647
+Red Line,1/30/19,Charles/MGH,10667
+Red Line,1/31/19,Charles/MGH,9811
+Red Line,2/1/19,Charles/MGH,9753
+Red Line,2/2/19,Charles/MGH,3223
+Red Line,2/3/19,Charles/MGH,2487
+Red Line,2/4/19,Charles/MGH,9986
+Red Line,2/5/19,Charles/MGH,12725
+Red Line,2/6/19,Charles/MGH,10750
+Red Line,2/7/19,Charles/MGH,10754
+Red Line,2/8/19,Charles/MGH,10516
+Red Line,2/9/19,Charles/MGH,3274
+Red Line,2/10/19,Charles/MGH,2564
+Red Line,2/11/19,Charles/MGH,10337
+Red Line,2/12/19,Charles/MGH,10496
+Red Line,2/13/19,Charles/MGH,10831
+Red Line,2/20/19,Charles/MGH,10411
+Red Line,2/21/19,Charles/MGH,10300
+Red Line,2/22/19,Charles/MGH,9987
+Red Line,2/23/19,Charles/MGH,3297
+Red Line,2/24/19,Charles/MGH,2087
+Red Line,2/25/19,Charles/MGH,8298
+Red Line,2/26/19,Charles/MGH,10819
+Red Line,2/27/19,Charles/MGH,10830
+Red Line,2/28/19,Charles/MGH,10457
+Red Line,3/1/19,Charles/MGH,10269
+Red Line,3/2/19,Charles/MGH,3046
+Red Line,3/3/19,Charles/MGH,2782
+Red Line,3/4/19,Charles/MGH,8432
+Red Line,3/5/19,Charles/MGH,11010
+Red Line,3/6/19,Charles/MGH,10849
+Red Line,3/7/19,Charles/MGH,10841
+Red Line,3/8/19,Charles/MGH,10296
+Red Line,3/9/19,Charles/MGH,3490
+Red Line,3/10/19,Charles/MGH,2143
+Red Line,3/11/19,Charles/MGH,10312
+Red Line,3/12/19,Charles/MGH,10640
+Red Line,3/13/19,Charles/MGH,10785
+Red Line,3/14/19,Charles/MGH,10843
+Red Line,3/15/19,Charles/MGH,10206
+Red Line,3/16/19,Charles/MGH,3708
+Red Line,3/17/19,Charles/MGH,3091
+Red Line,3/18/19,Charles/MGH,9889
+Red Line,3/19/19,Charles/MGH,10728
+Red Line,3/20/19,Charles/MGH,10803
+Red Line,3/21/19,Charles/MGH,10659
+Red Line,3/22/19,Charles/MGH,9830
+Red Line,3/23/19,Charles/MGH,3329
+Red Line,3/24/19,Charles/MGH,2812
+Red Line,3/25/19,Charles/MGH,10033
+Red Line,3/26/19,Charles/MGH,10664
+Red Line,3/27/19,Charles/MGH,10899
+Red Line,3/28/19,Charles/MGH,10698
+Red Line,3/29/19,Charles/MGH,10364
+Red Line,3/30/19,Charles/MGH,4086
+Red Line,3/31/19,Charles/MGH,2442
+Red Line,4/1/19,Charles/MGH,10129
+Red Line,4/2/19,Charles/MGH,10593
+Red Line,4/3/19,Charles/MGH,10788
+Red Line,4/4/19,Charles/MGH,10889
+Red Line,4/5/19,Charles/MGH,9862
+Red Line,4/6/19,Charles/MGH,3896
+Red Line,4/7/19,Charles/MGH,2953
+Red Line,4/8/19,Charles/MGH,10161
+Red Line,4/9/19,Charles/MGH,10783
+Red Line,4/10/19,Charles/MGH,11187
+Red Line,4/11/19,Charles/MGH,10856
+Red Line,4/12/19,Charles/MGH,10105
+Red Line,4/13/19,Charles/MGH,4781
+Red Line,4/14/19,Charles/MGH,3785
+Red Line,4/15/19,Charles/MGH,9105
+Red Line,4/16/19,Charles/MGH,11016
+Red Line,4/17/19,Charles/MGH,11066
+Red Line,4/18/19,Charles/MGH,10596
+Red Line,4/19/19,Charles/MGH,10113
+Red Line,4/20/19,Charles/MGH,3053
+Red Line,4/21/19,Charles/MGH,2708
+Red Line,4/22/19,Charles/MGH,9844
+Red Line,4/23/19,Charles/MGH,10893
+Red Line,4/24/19,Charles/MGH,11053
+Red Line,4/25/19,Charles/MGH,11144
+Red Line,4/26/19,Charles/MGH,9896
+Red Line,4/27/19,Charles/MGH,3924
+Red Line,4/28/19,Charles/MGH,2736
+Red Line,4/29/19,Charles/MGH,10229
+Red Line,4/30/19,Charles/MGH,10665
+Red Line,5/1/19,Charles/MGH,10590
+Red Line,5/2/19,Charles/MGH,10778
+Red Line,5/3/19,Charles/MGH,10337
+Red Line,5/4/19,Charles/MGH,3752
+Red Line,5/5/19,Charles/MGH,2869
+Red Line,5/6/19,Charles/MGH,10384
+Red Line,5/7/19,Charles/MGH,10702
+Red Line,5/8/19,Charles/MGH,11149
+Red Line,5/9/19,Charles/MGH,11264
+Red Line,5/10/19,Charles/MGH,10157
+Red Line,5/11/19,Charles/MGH,4550
+Red Line,5/12/19,Charles/MGH,2574
+Red Line,5/13/19,Charles/MGH,10247
+Red Line,5/14/19,Charles/MGH,10936
+Red Line,5/15/19,Charles/MGH,11062
+Red Line,5/16/19,Charles/MGH,11315
+Red Line,5/17/19,Charles/MGH,10090
+Red Line,5/18/19,Charles/MGH,4858
+Red Line,5/19/19,Charles/MGH,3353
+Red Line,5/20/19,Charles/MGH,10537
+Red Line,5/21/19,Charles/MGH,11236
+Red Line,5/22/19,Charles/MGH,11279
+Red Line,5/23/19,Charles/MGH,10881
+Red Line,5/24/19,Charles/MGH,10135
+Red Line,5/25/19,Charles/MGH,4099
+Red Line,5/26/19,Charles/MGH,3871
+Red Line,5/27/19,Charles/MGH,3631
+Red Line,5/28/19,Charles/MGH,10864
+Red Line,5/29/19,Charles/MGH,11421
+Red Line,5/30/19,Charles/MGH,11449
+Red Line,5/31/19,Charles/MGH,10702
+Red Line,6/1/19,Charles/MGH,4059
+Red Line,6/2/19,Charles/MGH,3859
+Red Line,6/3/19,Charles/MGH,10706
+Red Line,6/4/19,Charles/MGH,11242
+Red Line,6/5/19,Charles/MGH,11419
+Red Line,6/6/19,Charles/MGH,11807
+Red Line,6/7/19,Charles/MGH,11157
+Red Line,6/8/19,Charles/MGH,5967
+Red Line,6/9/19,Charles/MGH,3740
+Red Line,6/10/19,Charles/MGH,10886
+Red Line,6/11/19,Charles/MGH,10099
+Red Line,6/12/19,Charles/MGH,11056
+Red Line,6/13/19,Charles/MGH,10300
+Red Line,6/14/19,Charles/MGH,9370
+Red Line,6/15/19,Charles/MGH,3815
+Red Line,6/16/19,Charles/MGH,2297
+Red Line,6/17/19,Charles/MGH,10365
+Red Line,6/18/19,Charles/MGH,10636
+Red Line,6/19/19,Charles/MGH,11165
+Red Line,6/20/19,Charles/MGH,10823
+Red Line,6/21/19,Charles/MGH,10002
+Red Line,6/22/19,Charles/MGH,3914
+Red Line,6/23/19,Charles/MGH,3674
+Red Line,6/24/19,Charles/MGH,10475
+Red Line,6/25/19,Charles/MGH,10619
+Red Line,6/26/19,Charles/MGH,11219
+Red Line,6/27/19,Charles/MGH,10912
+Red Line,6/28/19,Charles/MGH,10371
+Red Line,6/29/19,Charles/MGH,3298
+Red Line,6/30/19,Charles/MGH,2621
 Red Line,7/1/19,Charles/MGH,10289
 Red Line,7/2/19,Charles/MGH,10672
 Red Line,7/3/19,Charles/MGH,10785

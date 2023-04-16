@@ -33,6 +33,12 @@ section.visualization svg {
 	position: relative;
   }
 
+#cmap-container {
+	width: 100%;
+	height: 600px; 
+	position: relative;
+  }
+
 #barchart {
 	width: 100%;
 	height: 600px;
@@ -88,14 +94,18 @@ circle {
 
 .bubbletooltip {
 	position: absolute;
-	text-align: center;
-	width: 80px;
-	height: 50px;
-	padding: 5px;
-	font-size: 12px;
-	font-weight: bold;
-	background-color: #fff;
-	border: 1px solid #000;
+	visibility: hidden;
+	top: 0px;
+	left: 0px;
+  
+	/* Adjust sizes, fonts, etc., just for the tooltip
+	based on your personal preferences */
+  
+	border: solid;
+	border-width: 2px;
 	border-radius: 5px;
-	pointer-events: none;
+	stroke-width: 0.5;
+	padding: 5px;
+	background-color: rgba(255,255,255,0.8);
+	font-size: 10pt;
   } 
