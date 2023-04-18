@@ -135,6 +135,7 @@ var newData = ridershipData.map((d, index) => ({
     })).sort((a, b) => parseInt(a.year) - parseInt(b.year))
   })).filter((d) => bostonNeighborhoods.includes(d.neighborhood))
 
+  console.log(newData);
 
   return newData
 };
