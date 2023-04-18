@@ -11,4 +11,4 @@ This project explores the ridership patterns of the Massachusetts Bay Transporta
 A more detailed explanation of the project can be found in the [Project Paper Writeup](https://github.com/thedesignerjane/thedesignerjane.github.io/blob/main/Clean%20Final/Riding%20the%20Rails_Paper%20Writeup.pdf)
 
 ## Additional materials:
-All files for this project, such as the dataset and source codes, can be found in the folders [Clean Final] (https://github.com/thedesignerjane/thedesignerjane.github.io/tree/main/Clean%20Final).
+All files for this project, such as the dataset and source codes, can be found in the folder [Clean Final]
