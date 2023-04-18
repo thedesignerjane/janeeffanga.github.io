@@ -148,7 +148,7 @@ var bostonNeighborhoods = [
    * For each station, the values for these fields are computed by 
    * separate functions. See above.
    */
-  var newData = ridershipData.map(
+var newData = ridershipData.map(
     (d, index) => {
       return {
         ...d,
@@ -159,9 +159,11 @@ var bostonNeighborhoods = [
       };
     }).filter((d) => bostonNeighborhoods.includes(d.neighborhood));
     
+    console.log(newData);
+
     return newData
 
-  console.log(newData);
+  
 };
 
  
@@ -231,7 +233,9 @@ d3.json(geoJSONFile).then(async function(ditu) {
             .style("top", `${y}px`)
             .style("left", `${x}px`)
             // This is just standard HTML syntax
-            .html(`<p><b>${d.stationname}</b><br><em>${d.totalRidership}</em><br>#: ${d.neighborhood}</p>`);
+            .html(`<p><b>${d.stationname}</b><br><em><strong>Total ridership: </strong>${d3.format(",")(d.totalRidership)}</em><br><strong>Neighborhood: </strong>${d.neighborhood}<br><strong>Lines: </strong>${d.ridership_by_line ? d.ridership_by_line.map(lineObj => lineObj.line).join(", ") : 'N/A'}</p>`);
+
+
 
         // Optionally, visually highlight the selected circle
         circles.attr("opacity", 0.1);
@@ -252,19 +256,34 @@ d3.json(geoJSONFile).then(async function(ditu) {
         d3.select(this)
         .style("stroke", "none");
 
-    });;
+    });
 
-    function zoomed(e) {
-        map.attr("transform", e.transform);
-    };
+    function zoomed(e){
+      map.attr("transform", e.transform);
 
-    let zoom = d3.zoom()
-       
-        .translateExtent([[0, 0], [mapwidth, mapheight]])
+      map.selectAll("circle")
+          .attr("r", function(d){
+              return (rScale(d.totalRidership)*scale)/e.transform.k;
+          });
+  }
 
-        .scaleExtent([1, 30])
-        .on("zoom", zoomed);
+  var zoom = d3.zoom()
+    .translateExtent([[0,0], [mapwidth, mapheight]])
+    .scaleExtent([1, 15])
+    .on("zoom", zoomed);
 
-    mapsvg.call(zoom);
+  var scale = 1.2;
+
+
+  var rScale = d3.scaleSqrt()
+  .domain(d3.extent(data, function (d) { 
+      // Convert totalRidership values to numbers, handle missing or undefined values
+      return +d.totalRidership || 0; 
+  }))
+  .range([0.1, 20]);
+
+  // Call zoom so it is "listening" for an event on our SVG
+  mapsvg.call(zoom);
+    
 
 });
