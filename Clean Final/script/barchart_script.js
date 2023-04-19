@@ -106,10 +106,9 @@ function draw (year) {
         .exit()
         .remove();
 
-    //tooltip
+    // //tooltip
     const tooltip = d3.select("#barchart")
     .append("div")
-    .style("opacity", 0.9)
     .attr("class", "tooltip")
     .style("position", "absolute")
     .style("background-color", "white")
