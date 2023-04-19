@@ -89,23 +89,19 @@
         </div>
 
         <div class="row about-content">
-            <p>“Riding the Rails” is a data visualization project that explores the ridership patterns of the
-                Massachusetts Bay Transportation Authority (MBTA), the public transit system that serves the Greater
-                Boston area.<br>
+            <p>Welcome to "Riding the Rails", an interactive visualization of the ridership patterns of the Massachusetts Bay Transportation Authority (MBTA) subway system. This project aims to explore and answer questions about MBTA ridership, such as how ridership varies across different lines, stations, and neighborhoods, and how it has changed over time.<br>
                 <br>
-                This project is the final submission for ARTG 5330 - Visualization Technology course, an elective course
-                I completed as part of my Experience Design graduate program at Northeastern University to learn the
-                basics of web-based interactive visualization.<br>
+                The data used in this visualization comes from the Subway and Light Rail Transit Ridership dataset for 2019 - 2022, from <a href="https://mobility-massdot.hub.arcgis.com">(MassDOT)</a> Mobility Dashboard. The dataset contains daily ridership data by station and subway line for the Greater Boston area. The goal of this project is to provide an informative and interactive visualization of the ridership data to understand MBTA subway ridership patterns in Boston.<br>
                 <br>
-                I chose the MBTA dataset for my project because it is something I could easily relate to, as it is my
-                major means of transportation as an international student who just moved to Boston. I noticed that some
-                lines and stations were more crowded than others, which sparked my curiosity about the patterns of
-                ridership and how they vary across different parts of the city.
-            </p>
+                This visualization tool leverages a combination of three different chart types: <span style="color: #ED8B00;">bar chart</span>, <span
+                style="color: #ED8B00;">bubble map</span>, and <span style="color: #ED8B00;">choropleth
+                map</span>. Through these charts, viewers can compare the ridership across different subway lines, understand how it has changed over the years from 2019 to 2022, and see how ridership varies across different neighborhoods of Boston.<br>
+                <br>
+                The interactive nature of this tool allows you to explore the data and find additional information, such as the total ridership, number of stations, and available lines. We hope that this visualization will help you gain a better understanding of MBTA ridership patterns and provide insights into the public transportation system in Boston.</p>
 
         </div>
         <!--Dataset info-->
-        <div class="row section-intro" style="height: 64px" ;>
+        <!-- <div class="row section-intro" style="height: 64px" ;>
             <div class="col-twelve">
 
                 <h2>
@@ -127,10 +123,10 @@
                 Dashboard. This dataset contains daily ridership data for the MBTA subway and light rail system, broken
                 down by station and subway line, from January 1st, 2019 to December 31st, 2022.
             </p>
-        </div>
+        </div> -->
 
         <!--Visualization Strategy info-->
-        <div class="row section-intro" style="height: 64px" ;>
+        <!-- <div class="row section-intro" style="height: 64px" ;>
             <div class="col-twelve">
 
                 <h2>
@@ -165,61 +161,29 @@
             </p>
         </div>
 
-    </section> <!-- /end of section about -->
+    </section> /end of section about -->
 
 <!-- Visualization section-->
     <section id="visualization">
 
-            <div class="row section-intro">
-                <div class="col-twelve">
+        <div class="row section-intro">
+            <div class="col-twelve">
 
-                    <h5>Visualization One</h5>
-                    <h1>Ridership across subway lines</h1>
+                <h5>Visualization One</h5>
+                <h1><img src="/Clean Final/images/titleicon.png" alt="icon" height="56" width="56"
+                    style="vertical-align: bottom; margin-right: 10px;">
+                <span>Ridership Across Subway Stations</span></h1>
 
-                    <div class="chart-intro-info">
-                    </div>
-
+                <div class="chart-intro-info">
                 </div>
+
             </div>
-
-            <div class="row about-content">
-                <p>This bar chart shows how ridership is distributed across different subway lines. Each bar segment represents
-                    the total ridership for that line for the selected year. By toggling between the different years using the
-                    drop-down selector, we can easily compare how ridership has changed over time and identify any trends.
-                </p>
-            </div>
-
-        <div class="row bar-chart-section">
-
-            <div class="year-selector">
-                <span class="select-year">Select a year</span>
-                <select name="year" id="year-select">
-                    <option value="0">2019</option>
-                    <option value="1">2020</option>
-                    <option value="2">2021</option>
-                    <option value="3">2022</option>
-                </select>
-            </div>
-            <div id="barchart"></div>
-
         </div>
 
-            <div class="row section-intro">
-                <div class="col-twelve">
-
-                    <h5>Visualization Two</h5>
-                    <h1>Ridership across subway stations</h1>
-
-                    <div class="chart-intro-info">
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="row about-content">
-                <p>We will use a bubble map to explore the busiest stations in the system. Users can zoom in to see more details between clusters. Each bubble on the map corresponds to a station, and its size indicates the ridership at that station. Hovering over a station will reveal a tooltip with additional information, such as the total ridership and available subway lines at that station. We can also toggle between different years to see how ridership patterns have changed over time.
-                </p>
-            </div>
+        <div class="row about-content">
+            <p>We will use a bubble map to explore the busiest stations in the system. Users can zoom in to see more details between clusters. Each bubble on the map corresponds to a station, and its size indicates the ridership at that station. Hovering over a station will reveal a tooltip with additional information, such as the total ridership and available subway lines at that station. We can also toggle between different years to see how ridership patterns have changed over time.
+            </p>
+        </div>
 
         <div class="row bubble-chart-section">
 
@@ -243,23 +207,25 @@
                 </div>
 
         </div>
-    
-            <div class="row section-intro">
-                <div class="col-twelve">
 
-                    <h5>Visualization Three</h5>
-                    <h1>Ridership Across Neighborhoods</h1>
+        <div class="row section-intro">
+            <div class="col-twelve">
 
-                    <div class="chart-intro-info">
-                    </div>
+                <h5>Visualization Two</h5>
+                <h1><img src="/Clean Final/images/titleicon.png" alt="icon" height="56" width="56"
+                    style="vertical-align: bottom; margin-right: 10px;">
+                <span>Ridership Across Neighborhoods</span></h1>
 
+                <div class="chart-intro-info">
                 </div>
-            </div>
 
-            <div class="row about-content">
-                <p>This choropleth math visualizes ridership distribution across neighborhoods. The color gradient on the map reflects the ridership rating of each neighborhood, with darker shades indicating higher ridership. Clicking on each neighborhood reveals a tooltip with additional information such as the total ridership for each neighborhood, ranking, no of stations, and available lines. You can also toggle between the years 2019 to 2022 to see how the ridership patterns have changed over time.
-                </p>
             </div>
+        </div>
+
+        <div class="row about-content">
+            <p>This choropleth math visualizes ridership distribution across neighborhoods. The color gradient on the map reflects the ridership rating of each neighborhood, with darker shades indicating higher ridership. Clicking on each neighborhood reveals a tooltip with additional information such as the total ridership for each neighborhood, ranking, no of stations, and available lines. You can also toggle between the years 2019 to 2022 to see how the ridership patterns have changed over time.
+            </p>
+        </div>
 
         <div class="row choropleth-map-section">
 
@@ -283,7 +249,45 @@
                     </svg>
                 </div>
 
+        </div>
+
+        <div class="row section-intro">
+            <div class="col-twelve">
+
+                <h5>Visualization Three</h5>
+                <h1><img src="/Clean Final/images/titleicon.png" alt="icon" height="56" width="56"
+                    style="vertical-align: bottom; margin-right: 10px;">
+                <span>Ridership Across Subway Lines</span></h1>
+
+                <div class="chart-intro-info">
+                </div>
+
             </div>
+        </div>
+
+        <div class="row about-content">
+            <p>This bar chart shows how ridership is distributed across different subway lines. Each bar segment represents
+                the total ridership for that line for the selected year. By toggling between the different years using the
+                drop-down selector, we can easily compare how ridership has changed over time and identify any trends.
+            </p>
+        </div>
+
+        <div class="row bar-chart-section">
+
+            <div class="year-selector">
+                <span class="select-year">Select a year</span>
+                <select name="year" id="year-select">
+                    <option value="0">2019</option>
+                    <option value="1">2020</option>
+                    <option value="2">2021</option>
+                    <option value="3">2022</option>
+                </select>
+            </div>
+            <div id="barchart"></div>
+
+        </div>
+    
+
     </section><!-- /end of section visualization -->
 
     <section id="funfacts">
@@ -291,7 +295,9 @@
             <div class="col-twelve">
 
                 <h5>Fun Fact</h5>
-                <h1>Origin of MBTA Colors</h1>
+                <h1><img src="/Clean Final/images/titleicon.png" alt="icon" height="56" width="56"
+                    style="vertical-align: bottom; margin-right: 10px;">
+                <span>Origin of MBTA Colors</span></h1>
 
                 <div class="intro-info">
                 </div>

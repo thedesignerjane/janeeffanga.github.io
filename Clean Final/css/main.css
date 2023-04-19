@@ -1291,7 +1291,7 @@
   * ------------------------------------------------------------------- 
   */
  #hero {
-     background: url(../images/Ridingtherails_hero.png) no-repeat center center;
+     background: url(../images/ridingtherailshero_white.png) no-repeat center center;
      -webkit-background-size: cover;
      -moz-background-size: cover;
      background-size: cover;
@@ -1310,8 +1310,9 @@
      transform: translate(-50%, -50%);
      width: 70%;
      height: 60%;
-     background: #111111;
-     opacity: .85;
+     background: #002e7e;
+     opacity: .70;
+     border-radius: 20px;
  }
  
  .hero-content {
@@ -1332,7 +1333,7 @@
      margin-bottom: .6rem;
      margin-left: auto;
      margin-right: auto;
-     text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+     text-shadow: 0 0 10px #002e7e;
  }
  .hero-content h5 {
      color: #cc005f;
