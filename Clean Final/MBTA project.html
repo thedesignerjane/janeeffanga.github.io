@@ -110,8 +110,7 @@
         </div>
 
         <div class="row about-content">
-            <p>We will use a bubble map to explore the busiest stations in the system. Users can zoom in to see more details between clusters. Each bubble on the map corresponds to a station, and its size indicates the ridership at that station. Hovering over a station will reveal a tooltip with additional information, such as the total ridership and available subway lines at that station. We can also toggle between different years to see how ridership patterns have changed over time.
-            </p>
+            <p>This bubble map visualizes the busiest MBTA subway stations. Each bubble represents a station, with its size indicating ridership. Users can zoom in to explore clusters and hover over stations to see details like total ridership and available lines. The map allows toggling between different years to observe changes in ridership patterns over time.</p>
         </div>
 
         <div class="row bubble-chart-section">
@@ -132,49 +131,6 @@
                         <rect id="ocean" x="0" y="0" fill="#f5f5f5" />
                         
                         <g id="map"></g>
-                    </svg>
-                </div>
-
-        </div>
-
-        <div class="row section-intro">
-            <div class="col-twelve">
-
-                <h5>Visualization Two</h5>
-                <h1><img src="/Clean Final/images/titleicon.png" alt="icon" height="56" width="56"
-                    style="vertical-align: bottom; margin-right: 10px;">
-                <span>Ridership Across Neighborhoods</span></h1>
-
-                <div class="chart-intro-info">
-                </div>
-
-            </div>
-        </div>
-
-        <div class="row about-content">
-            <p>This choropleth math visualizes ridership distribution across neighborhoods. The color gradient on the map reflects the ridership rating of each neighborhood, with darker shades indicating higher ridership. Clicking on each neighborhood reveals a tooltip with additional information such as the total ridership for each neighborhood, ranking, no of stations, and available lines. You can also toggle between the years 2019 to 2022 to see how the ridership patterns have changed over time.
-            </p>
-        </div>
-
-        <div class="row choropleth-map-section">
-
-                <div class="year-selector">
-                    <span class="select-year">Select a year</span>
-                    <select name="year" id="year-select-c">
-                        <option value="0">2019</option>
-                        <option value="1">2020</option>
-                        <option value="2">2021</option>
-                        <option value="3">2022</option>
-                    </select>
-                </div>
-
-                <div id="cmap-container">
-                    <svg id="cviz">
-                        <!-- The rectangle for the background color -->
-                        <rect id="ocean" x="0" y="0" fill="#f5f5f5" />
-                        
-                        <g id="cmap"></g>
-
                     </svg>
                 </div>
 
